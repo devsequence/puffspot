@@ -647,19 +647,22 @@
         }
     }
 }
-.section-filter{
-    flex-direction: column-reverse;
-}
-.sort-section{
-    width: 100%;
-}
-.sort-section__title{
-    width: 100%;
-}
-.filter-section label{
-    font-size: 0;
-    padding: 0;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
+// mobile-only: було поза медіа-запитом і ламало фільтри на десктопі
+@media screen and (max-width: 768px) {
+    .section-filter{
+        flex-direction: column-reverse;
+    }
+    .sort-section{
+        width: 100%;
+    }
+    .sort-section__title{
+        width: 100%;
+    }
+    .filter-section label{
+        font-size: 0;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
 }

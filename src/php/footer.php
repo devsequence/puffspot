@@ -43,7 +43,7 @@ $copy = carbon_get_theme_option('copy');
                     ) );?>
                 </div>
                 <div class="footer-logo">
-                    <a href="#"><img src="<?php echo $logo_url;?>" alt="logo"></a>
+                    <a href="<?php echo esc_url( function_exists( 'pll_home_url' ) ? pll_home_url() : home_url( '/' ) ); ?>"><img src="<?php echo $logo_url;?>" alt="logo"></a>
                 </div>
                 <div class="footer-action">
                     <?php

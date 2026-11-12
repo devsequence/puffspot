@@ -15,3 +15,6 @@ wp-config.php
 
 # OS junk
 .DS_Store
+
+# portfolio screenshots
+_portfolio/
