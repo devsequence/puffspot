@@ -1,0 +1,17 @@
+# deps / IDE
+node_modules/
+.idea/
+test/
+
+# backups & migrations (huge, not code)
+*.wpress
+*.zip
+_backup/
+src/static/images/installer.php
+
+# secrets
+wp-config.php
+.user.ini
+
+# OS junk
+.DS_Store

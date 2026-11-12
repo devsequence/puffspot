@@ -1,0 +1,224 @@
+.contact{
+  padding: 40rem 0;
+  &-wrap{
+    display: flex;
+    gap: 10rem;
+  }
+  &-inner{
+    position: relative;
+    width: 50%;
+    padding: 60rem 60rem 50rem;
+    border-radius: 24rem;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #151516;
+    box-shadow: 4px 4px 16px 0 rgba(255, 255, 255, 0.04) inset;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1rem;
+      height: 100%;
+      background:
+              linear-gradient(180deg, rgba(255,255,255,0.10), rgba(0,0,0,0.30)),
+              linear-gradient(0deg, rgba(255,255,255,0.05), rgba(255,255,255,0.05));
+      -webkit-mask:
+              linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -2;
+      opacity: 0.3;
+      margin: 0 auto;
+      width: 150%;
+      height: 100%;
+      background-image: url('../images/waleContact.svg');
+      background-repeat: repeat-x;
+      background-size: cover;
+      background-position: center ;
+      animation: waveMove 13s linear infinite;
+      //animation-play-state: paused;
+    }
+    .title-section{
+      margin-bottom: 16rem;
+    }
+    .text-section{
+      color: rgba($white, .7);
+    }
+  }
+  &-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+  }
+  &-item{
+    width: 100%;
+    max-width: calc(50% - 10rem);
+    background-color: #1D1D1D;
+    border-radius: 20rem;
+    padding: 28rem;
+    display: flex;
+    gap: 20rem;
+    &__media{
+      min-width: 60rem;
+      width: 60rem;
+      height: 60rem;
+      img, svg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__desc{
+      h4{
+        font-size: 18rem;
+        line-height: 160%;
+      }
+      a{
+        color: rgba($white, .7);
+        &:hover{
+          color: rgba($white, 1);
+        }
+      }
+    }
+  }
+  ._bg{
+    width: 895rem;
+    height: 111rem;
+    position: absolute;
+    bottom: -50rem;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(50px);
+    opacity: .5;
+    background: radial-gradient(
+                    circle at center,
+                    rgba(151, 199, 253, 0.9) 0%,
+                    rgba(151, 199, 253, 0.9) 40%,
+                    rgba(151, 199, 253, .3) 100%
+    );
+
+  }
+  &-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    .modal-group{
+      max-width: calc(50% - 10rem);
+      &:nth-last-child(3){
+        width: 100%;
+        margin-bottom: 20rem;
+        max-width: calc(100% - 10rem);
+      }
+    }
+    .btn-primary{
+      width: 100%;
+      padding: 14px 40rem;
+    }
+  }
+  .text-form{
+    text-align: center;
+    color: $white;
+    width: 100%;
+    a{
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
+.input_st {
+  font: 600 14rem/24rem $Inter;
+  color: $white;
+  padding: 14rem 16rem ;
+  outline: none;
+  width: 100%;
+  border: 1rem solid rgba($white, .1);
+  background-color: #1D1D1D;
+  border-radius: 12rem;
+}
+
+.input_st::-webkit-input-placeholder {
+  color: rgba(109, 109, 109, .7)
+}
+
+.input_st::-moz-placeholder {
+  color: rgba(109, 109, 109, .7)
+}
+
+.input_st:-ms-input-placeholder {
+  color: rgba(109, 109, 109, .7)
+}
+
+.input_st::-ms-input-placeholder {
+  color: rgba(109, 109, 109, .7)
+}
+
+.input_st::placeholder {
+  color: rgba(109, 109, 109, .7)
+}
+
+.input_st:focus {
+  background-color: #1D1D1D;
+  border-color: #4D76FF
+}
+
+.modal-group{
+  margin-bottom: 10rem;
+  width: 100%;
+  input, textarea{
+    font: 600 14rem/24rem $Inter;
+    color: $white;
+    padding: 14rem 16rem ;
+    outline: none;
+    width: 100%;
+    border: 1rem solid rgba($white, .1);
+    background-color: #1D1D1D;
+    border-radius: 12rem;
+  }
+  textarea{
+    height: 100rem;
+    resize: none;
+  }
+}
+.seo-text{
+  padding: 40rem 0 66rem;
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80rem;
+  }
+  &-item{
+    max-width: 800rem;
+  }
+  .text-section{
+    color: rgba($white, .4);
+
+    font-size: 14rem;
+    line-height: 24rem;
+    p{
+      font-size: 14rem;
+      line-height: 24rem;
+      margin-bottom: 12rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.title-block{
+  font:500 22rem/32rem $Inter;
+  margin-bottom: 28rem;
+}

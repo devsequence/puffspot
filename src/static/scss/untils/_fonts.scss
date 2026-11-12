@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+$Inter: "Inter", sans-serif;
+$Nunito: "Nunito", sans-serif;
+
+$h1 : 600 56rem/70rem $Inter;
+$h2 : 600 34rem/48rem $Inter;
+$h3 : 600 22rem/32rem $Inter;
+$h4 : 600 18rem/32rem $Inter;
+$h5 : 600 18rem/28rem $Inter;
+$h6 : 600 16rem/26rem $Inter;
+
+
+$body : 400 16rem/26rem $Inter;
+$button : 600 14rem/24rem $Inter;
+

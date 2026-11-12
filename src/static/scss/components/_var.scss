@@ -1,0 +1,31 @@
+// genearl
+$white: #fff;
+$black: #000;
+
+// main
+$default: #0b0b0b;
+$line: #222;
+$cardBg: #151516;
+$gradient: linear-gradient(90deg,rgba(152, 202, 254, 1) 0%, rgba(102, 103, 204, 1) 100%);  ;
+
+$red: #C12716;
+
+// info
+
+$danger: #FE0000;
+$success: #1FA956;
+$info: #26badf;
+$warning: #fbf8db;
+
+// shades
+
+
+
+
+// mixins
+
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: linear-gradient($direction, $fromColor, $toColor);
+}
+
